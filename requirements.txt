@@ -3,4 +3,7 @@ pandas
 numpy
 scikit-learn
 joblib
-category_encoders
+xgboost
+setuptools
+
+
