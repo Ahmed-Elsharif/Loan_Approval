@@ -5,8 +5,10 @@ import numpy as np
 import sklearn
 import category_encoders
 
-Model = joblib.load("Model.pkl")
-Inputs = joblib.load("Inputs.pkl")
+Model = pd.read_pickle("Model.pkl")
+Inputs = pd.read_pickle("Inputs.pkl")
+
+
 
 def Make_Prediciton(Gender, Married, Dependents, Education, Self_Employed,
        ApplicantIncome, CoapplicantIncome, LoanAmount,
