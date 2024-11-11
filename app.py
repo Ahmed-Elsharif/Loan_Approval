@@ -5,8 +5,13 @@ import numpy as np
 import sklearn
 import category_encoders
 
-Model = pd.read_pickle("Model.pkl")
-Inputs = pd.read_pickle("Inputs.pkl")
+# loading the dataframe
+with open('Model.pkl','rb') as file:
+    Model=pd.read_pickle(file)
+# loading the pipeline
+with open('Inputs.pkl','rb') as file:
+    Inputs=pd.read_pickle(file)
+
 
 
 
