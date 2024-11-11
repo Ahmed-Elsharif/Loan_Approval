@@ -1,8 +1,8 @@
-streamlit
+streamlit==1.36.0
 pandas==1.5.3
-numpy
-scikit-learn
-joblib
+numpy==1.23.5
+scikit-learn==1.5.1
+joblib==1.3.2
 xgboost
 setuptools
 category_encoders
