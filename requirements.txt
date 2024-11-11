@@ -1,5 +1,6 @@
 streamlit
 pandas
+pandas.core.indexes.numeric
 numpy
 scikit-learn
 joblib
