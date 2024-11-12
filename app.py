@@ -7,11 +7,11 @@ import category_encoders
 import pickle
 
 
-
-with open("Model.pkl", "rb") as f:
-    model = pickle.load(f)
-
-
+try:
+    with open("Model.pkl", "rb") as f:
+        model = pickle.load(f)
+except ModuleNotFoundError as e:
+    print(f"Module not found: {e}")
 
 
 Inputs = joblib.load("Inputs.pkl")
