@@ -9,6 +9,7 @@ import pickle
 
 try:
     with open("Model.pkl", "rb") as f:
+        global model
         model = pickle.load(f)
 except ModuleNotFoundError as e:
     print(f"Module not found: {e}")
