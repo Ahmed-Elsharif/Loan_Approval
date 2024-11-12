@@ -6,5 +6,6 @@ joblib
 xgboost
 setuptools
 category_encoders
+pytest
 
 
