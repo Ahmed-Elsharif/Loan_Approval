@@ -4,8 +4,16 @@ import joblib
 import numpy as np
 import sklearn
 import category_encoders
+import pickle
 
-Model = joblib.load("Model.pkl")
+
+
+with open("Model.pkl", "rb") as f:
+    model = pickle.load(f)
+
+
+
+
 Inputs = joblib.load("Inputs.pkl")
 
 def Make_Prediciton(Gender, Married, Dependents, Education, Self_Employed,
