@@ -7,6 +7,5 @@ xgboost
 setuptools
 category_encoders
 pytest
-pickle
 
 
