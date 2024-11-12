@@ -32,7 +32,7 @@ def Make_Prediciton(Gender, Married, Dependents, Education, Self_Employed,
     pr_df.at[0 , 'Credit_History'] = Credit_History
     pr_df.at[0 , 'Property_Area'] = Property_Area
 
-    prediction = Model.predict(pr_df)
+    prediction = model.predict(pr_df)
     return prediction[0]
 
 def main():
